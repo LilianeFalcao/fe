@@ -7,7 +7,7 @@
                 <div class="upperHead">
                   <div>
                      <p>
-                      <a href="principal.html">Lumière</a>
+                      <a href="">Lumière</a>
                     </p>
                   </div>
                     <form action="#" method="post">

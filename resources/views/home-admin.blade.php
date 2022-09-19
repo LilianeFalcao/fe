@@ -46,7 +46,7 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Escreva aqui seu novo Post</h1>
-          <form method="POST" action="/fotos/create" enctype="multipart/form-data">
+          <form method="POST" action="/fotos" enctype="multipart/form-data">
             @csrf
             <div class="form-group text-left">
               <label for="email">E-mail</label>

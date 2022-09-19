@@ -43,7 +43,7 @@ class ControladorFoto extends Controller
         $post->mensagem = $request->input('mensagem');
         $post->arquivo = $path;
         $post->save();
-        return redirect('/admin');
+        return redirect('/home-admin');
     }
 
     /**
@@ -94,7 +94,7 @@ class ControladorFoto extends Controller
             Storage::disk('public')->delete($arquivo);
             $post->delete();
         }
-        return redirect('/admin');
+        return redirect('/home-admin');
     }
 
     public function download($id)
@@ -104,7 +104,7 @@ class ControladorFoto extends Controller
             $path = Storage::disk('public')->getDriver()->getAdapter()->apllyPathPrefix($post->arquivo);
             return response()->download($path);
         }else{
-            return redirect('/admin');
+            return redirect('/home-admin');
         }
     }
 }
