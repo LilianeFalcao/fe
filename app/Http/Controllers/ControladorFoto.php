@@ -26,7 +26,7 @@ class ControladorFoto extends Controller
      */
     public function create()
     {
-        //
+       //
     }
 
     /**

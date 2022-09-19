@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ControladorFoto;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,10 +47,10 @@ Route::middleware([
 });
 
 
-/* Rotas das imagens */
+/*
+ Rotas das imagens */
 
-
-Route::get('/admin', [ App\Http\Controllers\ControladorFoto::class,'index']);
-Route::post('/admin',[ App\Http\Controllers\Auth\ControladorFoto::class,'store']);
+Route::get('/home-admin', [ App\Http\Controllers\ControladorFoto::class,'index']);
+Route::post('/home-admin',[ App\Http\Controllers\Auth\ControladorFoto::class,'store']);
 Route::delete('/{id}',[ App\Http\Controllers\Auth\ControladorFoto::class,'destroy']);
 Route::get('/download/{id}',[ App\Http\Controllers\Auth\ControladorFoto::class,'download']);

@@ -46,10 +46,10 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Escreva aqui seu novo Post</h1>
-          <form method="POST" action="/" enctype="multipart/form-data">
+          <form method="POST" action="/fotos/create" enctype="multipart/form-data">
             @csrf
             <div class="form-group text-left">
-              <label for="email">Endereço de e-mail</label>
+              <label for="email">E-mail</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="nome@dominio.com">
             </div>
             <div class="custom-file">
