@@ -44,14 +44,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+     Route::get('/comunidade', function () {
+        return view('comunidade');
+    })->name('comunidade');
 });
-
-
-/*
- Rotas das imagens 
-
-Route::get('/admin', [ App\Http\Controllers\ControladorFoto::class,'index']);
-Route::post('/admin',[ App\Http\Controllers\Auth\ControladorFoto::class,'store']);
-Route::delete('/{id}',[ App\Http\Controllers\Auth\ControladorFoto::class,'destroy']);
-Route::get('/download/{id}',[ App\Http\Controllers\Auth\ControladorFoto::class,'download']);
-*/
