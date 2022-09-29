@@ -1,3 +1,5 @@
+import postcss from 'postcss';
+import cssDeclarationSorter from 'css-declaration-sorter';
 
 <template>
     <app-layout>
@@ -139,9 +141,9 @@ export default {
     }
 }
 </script>
-<!--
-   
+   <!--
 <style>
+
 .messageFromMe {
     @apply bg-gray-900 bg-opacity-25;
 }
@@ -149,5 +151,7 @@ export default {
 .messageToMe {
     @apply bg-gray-800 bg-opacity-25;
 }
-</style> 
+
+</style>
+
 -->
