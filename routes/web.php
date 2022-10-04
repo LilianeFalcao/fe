@@ -36,6 +36,10 @@ Route::get('/admin/login',[ App\Http\Controllers\Auth\AdminLoginController::clas
 Route::post('/admin/login',[ App\Http\Controllers\Auth\AdminLoginController::class,'login']) -> name ('login-admin-submit');
 Route::post('/admin/logout',[ App\Http\Controllers\Auth\AdminLoginController::class,'logout']) -> name ('logout-admin') ;
 
+
+Route::get('/filmes', [App\Http\Controllers\ControladorFoto::class, 'index']);
+Route::post('/filmes', [App\Http\Controllers\ControladorFoto::class, 'store']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -48,3 +52,4 @@ Route::middleware([
         return view('comunidade');
     })->name('comunidade');
 });
+
